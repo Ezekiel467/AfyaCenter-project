@@ -1,0 +1,201 @@
+body {
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.btn {
+    text-decoration: none;
+    background: #557fb0;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 20px;
+    display: inline-block;
+    transition: 0.3s ease;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.btn:hover {
+    background: #0477ebf6;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: rgb(1, 134, 134);
+}
+
+.hero {
+    text-align: center;
+    padding: 48px 16px;
+    background-color: #557fb0;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    color: #fbfdfd;
+}
+
+.hero p {
+    margin-top: 0.5rem;
+    color: #fbfdfd;
+    font-weight: bold;
+}
+
+.systems {
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    margin: auto;
+}
+
+.systems h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #557fb0;
+    font-size: 3rem;
+}
+
+.systems article {
+    background: #c9f1ee;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #557fb0;
+    border-radius: 5px;
+    box-shadow: 0-2px 4px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background: #0f172a;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #777;
+    box-shadow: 0-2px 4px rgba(0, 0, 0, 0.5);
+    color: #f1f5f9;
+}
+
+footer h4 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #38bdf8;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about {
+    background-image: url('../image/hospitalist.jpg');
+    background-size: cover;
+    padding: 4rem 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.353);
+}
+
+.about-container {
+    max-width: 800px;
+    margin: auto;
+
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #38bdf8;
+    margin-bottom: 1rem;
+    z-index: 100;
+}
+
+.about p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    z-index: 100;
+}
+
+.book-appointment-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.book-appointment {
+    text-decoration: none;
+    color: #f1f5f9;
+    font-weight: bold;
+    font-size: 16px;
+    background: #00796b;
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background-color ease;
+}
+
+.book-appointment:hover {
+    background: #004d40;
+}
+
+@media(max-width: 768) {
+    body {
+        flex-direction: column;
+        width: 90%;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
